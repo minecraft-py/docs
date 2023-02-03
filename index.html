@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>docs</title>
+	<meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
+	<style>
+		a {
+			text-decoration: none;
+		}
+
+		@media (max-width: 575.98px) {
+			.container {
+				margin: 10px;
+			}
+		}
+
+		@media (min-width: 576px) {
+			.container {
+				margin: 0 auto;
+				max-width: 50%;
+			}
+		}
+	</style>
+	<script>
+		switch (navigator.language.split("-")[0]) {
+			case "zh":
+				window.location = "https://minecraft-in-python.github.io/docs-zh/";
+				break;
+		}
+	</script>
+</head>
+
+<body>
+	<h1 style="text-align: center">Minecraft-in-python Documents</h1>
+	<div class="container">
+		<p>The browser failed to redirect to the appropriate document, please select from the list below:</p>
+		<ul>
+			<li><a href="https://minecraft-in-python.github.io/docs-zh/">中文文档</a></li>
+		</ul>
+	</div>
+</body>
+
+</html>
