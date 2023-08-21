@@ -23,10 +23,13 @@
 		}
 	</style>
 	<script>
-		switch (navigator.language.split("-")[0]) {
-			case "zh":
-				window.location = "https://minecraft-py.github.io/docs-zh/";
-				break;
+		lang = navigator.language;
+		path = window.location.hash.slice(1);
+		if (path.length > 1) {
+			path += ".html";
+		}
+		if (/^zh-.*$/.test(lang)) {
+			window.location = `https://minecraft-py.github.io/docs-zh/${path}`;
 		}
 	</script>
 </head>
